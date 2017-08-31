@@ -32,8 +32,7 @@ class RenderEngine():
         """
 
         #  randomize word orientation
-        for i in range(len(self.word_object.wordlist)):
-            word = self.word_object.wordlist[i]
+        for word in self.word_object.wordlist:
             new_orientation = self.orientation[random.randint(1, len(self.orientation))]
             self.word_orientation.append({word: new_orientation})
 
@@ -41,8 +40,9 @@ class RenderEngine():
         """
         Debug: prints the words from the word list and their orientations
         """
-        for i in range(len(self.word_object.wordlist)):
-            print(self.word_orientation[i])
+        for word in self.word_orientation:
+            print(word)
+
 
     def generate_grid(self, size=0):
         """
