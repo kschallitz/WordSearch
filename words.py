@@ -2,6 +2,7 @@
 Reads words from a URL or file for use in creating a crossword puzzle
 """
 from urllib.request import urlopen
+import re
 
 class Words:
     wordlist = []  # list of words
@@ -37,14 +38,7 @@ class Words:
 
             # File format is assumed to be strings (one per line)
             for line in f:
-                line = line.rstrip('\n')
-                if self.case == "lower":
-                    line = line.lower()
-                elif self.case == "UPPER":
-                    line = line.upper()
-                elif self.case == "Capital":
-                    line = line.capitalize()
-
+                line = self.clean_word(line)
                 self.wordlist.append(line)
 
             f.close()
@@ -52,8 +46,11 @@ class Words:
             word_set = set(self.wordlist)
             self.wordlist = list(word_set)
 
-        except Exception:
-            print("TODO: Clarify exceptions for file read failure")
+            # Put larger words first as the small ones are easier to fit
+            self.wordlist.sort(key = len, reverse=True)
+
+        except Exception as error:
+            print("TODO: Clarify exceptions for file read failure: " + str(error))
 
         # debug: Show list of words we just read in
         #if (__debug__):
@@ -78,8 +75,8 @@ class Words:
             with urlopen(url) as words:
                 for word in words:
                     word = word.decode('UTF-8')
-                    word = word.lower()
-                    word = word.rstrip('\n')
+                    word = self.clean_word(word)
+
                     for subword in word.split():
                         if len(subword) > 2:
                             self.wordlist.append(subword)
@@ -91,6 +88,24 @@ class Words:
         # eliminate any duplicates
         word_set = set(self.wordlist)
         self.wordlist = list(word_set)
+
+        # Put larger words first as the small ones are easier to fit
+        self.wordlist.sort(key=len, reverse=True)
+
+    def clean_word(self, word):
+        word = word.rstrip('\n')
+
+        if self.case == "lower":
+            word = word.lower()
+        elif self.case == "UPPER":
+            word = word.upper()
+        elif self.case == "Capital":
+            word = word.capitalize()
+
+        # Eliminate any non-alpha character
+        thisword = re.sub('[^a-zA-Z]', '', word)
+
+        return thisword
 
     def get_max_word_len(self, word_list=wordlist):
         """

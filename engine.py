@@ -25,7 +25,7 @@ class RenderEngine():
     mutable_matrix = [[1 for x in range(1)] for y in range(1)]
     missed_words = []
     CONST_DIFFICULTY = 1 # multiples the grid size to make it harder to find words
-    CONST_PLACEMENT_RETRY = 10 # Number of times to try to place a word that doesn't fit with current loc / orientation
+    CONST_PLACEMENT_RETRY = 500 # Number of times to try to place a word that doesn't fit with current loc / orientation
 
     def __init__(self, word_object):
         """ constructor for render_engine - takes a word object """
@@ -205,8 +205,13 @@ class RenderEngine():
             #       need to collect all the info and assemble it into the tuple. This way you see clearly what is passed
             valid = self.test_word_placement(word_item, start_x, end_x, start_y, end_y, step_x, step_y)
             if not(valid):
-                retry += 1
-                orientation = self.orientations[random.randint(1, len(self.orientations))] # Try a new random orientation
+                # Try reversing the order of the word to see if it will fit that way
+                word_item = word_item[::-1]
+                valid = self.test_word_placement(word_item, start_x, end_x, start_y, end_y, step_x, step_y)
+
+                if not valid:
+                    orientation = self.orientations[random.randint(1, len(self.orientations))] # Try a new random orientation
+                    retry += 1
 
         # place word in grid
         if valid:
@@ -256,7 +261,7 @@ class RenderEngine():
         while (col != end_x) and (row != end_y):
             if not (self.mutable_matrix[row][col]):
                 # Determine if it is the same letter we are trying to place
-                if (self.letter_matrix[row][col] == word_item[letter_index]):
+                if (self.letter_matrix[row][col].lower() == word_item[letter_index].lower()):
                     # We're still okay - continue to try to place word
                     letter_index += 1
                     row += step_y
