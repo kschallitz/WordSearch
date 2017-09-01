@@ -14,17 +14,17 @@ import sys
 def main(location):
     # read the words from a file
     word_object = Words()
+    word_object.set_case("Capital")
     word_object.read_words_file(location)
+
     #word_object.read_words_url("https://gist.githubusercontent.com/atduskgreg/3cf8ef48cb0d29cf151bedad81553a54/raw/82f142562cf50b0f6fb8010f890b2f934093553e/animals.txt")
 
     # render a grid with the words
     engine = RenderEngine(word_object)
     engine.generate_grid(16)
-
-    # display the word grid
     engine.print_letter_matrix()
 
-    engine.print_word_orientations()
+    engine.print_words_in_grid()
 
 location = r"c:\temp\words.txt"
 if __name__ == "__main__":
