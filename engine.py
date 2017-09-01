@@ -148,7 +148,7 @@ class RenderEngine():
         while not(valid) and (retry < self.CONST_PLACEMENT_RETRY):
             # determine word orientation
             if (orientation == 'horizontal_forward') or (orientation == 'horizontal_backward'):
-                if orientation == 'horizontal_backward'":
+                if orientation == 'horizontal_backward':
                     word_item = word_item[::-1]
 
                 start_x = random.randint(0, grid_length - word_length )
