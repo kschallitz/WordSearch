@@ -6,10 +6,24 @@ from urllib.request import urlopen
 class Words:
     wordlist = []  # list of words
     max_word_length = 0
+    cases = {"lower":1, "UPPER":2, "Capital":3}
+    case = "lower"
+
+    def set_case(self, case=None):
+        if case == None:
+            self.case = self.cases["lower"]
+            return
+
+        if case not in self.cases:
+            return
+        else:
+            self.case = case
+
+        return
 
     def read_words_file(self, file_name):
         """
-        Read words into a list from a file
+        Read words into a list from a file, converting to set case(default: lowercase)
 
         :param
             file_name: Name of file containing strings of words (one per line)
@@ -23,9 +37,18 @@ class Words:
 
             # File format is assumed to be strings (one per line)
             for line in f:
-                self.wordlist.append(line.rstrip('\n'))
+                line = line.rstrip('\n')
+                if self.case == "lower":
+                    line = line.lower()
+                elif self.case == "UPPER":
+                    line = line.upper()
+                elif self.case == "Capital":
+                    line = line.capitalize()
+
+                self.wordlist.append(line)
 
             f.close()
+
             word_set = set(self.wordlist)
             self.wordlist = list(word_set)
 
@@ -40,6 +63,17 @@ class Words:
         return self.wordlist
 
     def read_words_url(self, url):
+        """
+        Read words into a list from an URL, making the words lowercase
+
+        :param
+            url: url containing UTF-8 encoded words (one per line)
+
+        :return:
+            list: A list containing all words from the given url as lowercase strings
+        :param url:
+        :return:
+        """
         try:
             with urlopen(url) as words:
                 for word in words:
@@ -54,7 +88,7 @@ class Words:
             # TODO
             print ("Error opening URL")
 
-        # eliminate any dulicates
+        # eliminate any duplicates
         word_set = set(self.wordlist)
         self.wordlist = list(word_set)
 
