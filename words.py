@@ -5,17 +5,19 @@ from urllib.request import urlopen
 import re
 
 class Words:
-    wordlist = []  # list of words
-    max_word_length = 0
-    cases = {"lower":1, "UPPER":2, "Capital":3}
+    _max_word_length = 0
+    _cases = {"lower":1, "UPPER":2, "Capital":3}
+
     case = "lower"
+    wordlist = []  # list of words
 
     def set_case(self, case=None):
+        """ Sets the case to use when displaying the word grid. Default is lowercase. """
         if case == None:
-            self.case = self.cases["lower"]
+            self.case = self._cases["lower"]
             return
 
-        if case not in self.cases:
+        if case not in self._cases:
             return
         else:
             self.case = case
@@ -33,15 +35,13 @@ class Words:
             list: A list containing all words from the given file
         """
 
+
         try:
-            f = open(file_name, "r")
+            with open(file_name, "r") as f:
+                # File format is assumed to be strings (one per line)
+                # Use a set comprehension to eliminate duplicates
+                word_set = {self.clean_word(word) for word in f}
 
-            # File format is assumed to be strings (one per line)
-            self.wordlist = [self.clean_word(word) for word in f]
-
-            f.close()
-
-            word_set = set(self.wordlist)
             self.wordlist = list(word_set)
 
             # Put larger words first as the small ones are easier to fit
