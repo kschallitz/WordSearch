@@ -12,38 +12,42 @@ class RenderEngine():
     Contains helper functions to display the words that were inserted, words not inserted,
     display the grid, and display word orientations.
     """
-    word_object = None
-    grid_size = 0
-    letters_lower = 'abcdefghijklmnopqrstuvwxyz'
-    letters_UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    missed_words = []
+
+    _word_object = None
+    _grid_size = 0
+    _letters_lower = 'abcdefghijklmnopqrstuvwxyz'
+    _letters_UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     orientations = {1: "horizontal_forward", 2: "horizontal_backward",
                     3: "vertical_forward", 4: "vertical_backward",
                     5: "frontslash_forward", 6: "frontslash_backward",
                     7: "backslash_forward", 8: "backslash_backward"}
-    word_orientation = {}
-    letter_matrix = [[1 for x in range(1)] for y in range(1)]
-    mutable_matrix = [[1 for x in range(1)] for y in range(1)]
-    missed_words = []
-    CONST_DIFFICULTY = 1 # multiples the grid size to make it harder to find words
-    CONST_PLACEMENT_RETRY = 500 # Number of times to try to place a word that doesn't fit with current loc / orientation
+    _word_orientation = {}
+    _letter_matrix = [[1 for x in range(1)] for y in range(1)]
+    _mutable_matrix = [[1 for x in range(1)] for y in range(1)]
+    _CONST_DIFFICULTY = 1 # multiples the grid size to make it harder to find words
+    _CONST_PLACEMENT_RETRY = 500 # Number of times to try to place a word that doesn't fit with current loc / orientation
 
     def __init__(self, word_object):
-        """ constructor for render_engine - takes a word object """
-        self.word_object = word_object
+        if word_object is None:
+            raise ValueError("Invalid Word object supplied.")
 
-    def randomize_word_orientations(self):
+        """ constructor for render_engine - takes a word object """
+        self._word_object = word_object
+
+    def _randomize_word_orientations(self):
         """
         Assigns random orientations to each word in the word list
         """
 
         #  randomize word orientation
         num_orientations = len(self.orientations)
-        for word in self.word_object.wordlist:
+        for word in self._word_object.wordlist:
             new_orientation = self.orientations[random.randint(1, num_orientations)] # use text as it's easier to read
-            self.word_orientation.update({word: new_orientation})
+            self._word_orientation.update({word: new_orientation})
 
     def print_words_in_grid(self):
-        for word in [x for x in self.word_object.wordlist if x not in self.missed_words]:
+        for word in [x for x in self._word_object.wordlist if x not in self.missed_words]:
             print (word)
 
     def print_words_not_in_grid(self):
@@ -54,7 +58,7 @@ class RenderEngine():
         """
         Debug: prints the words from the word list and their orientations
         """
-        for word in self.word_orientation:
+        for word in self._word_orientation:
             print(word)
 
     def generate_grid(self, size=0):
@@ -73,37 +77,37 @@ class RenderEngine():
 
         # If size is too small to contain largest word,
         # then, increase the grid size.
-        max_word_len = self.word_object.get_max_word_len()
+        max_word_len = self._word_object.get_max_word_len()
 
         if size < max_word_len:
             size = max_word_len
 
-        size *= self.CONST_DIFFICULTY
+        size *= self._CONST_DIFFICULTY
 
-        self.grid_size = size
-        self.letter_matrix = [[0 for x in range(size)] for y in range(size)]
-        self.mutable_matrix = [[0 for x in range(size)] for y in range(size)]
+        self._grid_size = size
+        self._letter_matrix = [[0 for x in range(size)] for y in range(size)]
+        self._mutable_matrix = [[0 for x in range(size)] for y in range(size)]
 
         # first create the grid with random letters
         for col in range (size):
             for row in range (size):
                 # generate a random letter
-                if (self.word_object.case == "lower") or (self.word_object.case == "Capital"):
-                    self.letter_matrix[row][col] = random.choice(self.letters_lower)
+                if (self._word_object.case == "lower") or (self._word_object.case == "Capital"):
+                    self._letter_matrix[row][col] = random.choice(self._letters_lower)
                 else:
-                    self.letter_matrix[row][col] = random.choice(self.letters_UPPER)
+                    self._letter_matrix[row][col] = random.choice(self._letters_UPPER)
 
-                self.mutable_matrix[row][col] = True # Set each space in the grid to be mutable by default
+                self._mutable_matrix[row][col] = True # Set each space in the grid to be mutable by default
 
         # Randomize word orientations
-        self.randomize_word_orientations()
+        self._randomize_word_orientations()
 
         # DEBUG
         # self.print_word_orientations()
 
         # Place words on matrix
-        for word, orientation in self.word_orientation.items():
-            self.place_word_in_grid(word, orientation)
+        for word, orientation in self._word_orientation.items():
+            self._place_word_in_grid(word, orientation)
 
     def print_letter_matrix(self, matrix=None):
         """ Display the n X n matrix of letters and words
@@ -113,7 +117,7 @@ class RenderEngine():
         """
 
         if matrix is None:
-            matrix = self.letter_matrix
+            matrix = self._letter_matrix
 
         size = len(matrix)
 
@@ -131,7 +135,7 @@ class RenderEngine():
 
             print ("\r")
 
-    def place_word_in_grid(self, word, orientation):
+    def _place_word_in_grid(self, word, orientation):
         start_x = 0
         start_y = 0
         end_x = 0
@@ -141,7 +145,7 @@ class RenderEngine():
 
         word_item = word
         word_length = len(word) - 1
-        grid_length = self.grid_size - 1
+        grid_length = self._grid_size - 1
 
         # DEBUG
         #if (orientation != 'backslash_backward'):
@@ -151,7 +155,7 @@ class RenderEngine():
         retry = 0
 
         # pick a random location in the grid
-        while not(valid) and (retry < self.CONST_PLACEMENT_RETRY):
+        while not(valid) and (retry < self._CONST_PLACEMENT_RETRY):
             # determine word orientation
             if (orientation == 'horizontal_forward') or (orientation == 'horizontal_backward'):
                 if orientation == 'horizontal_backward':
@@ -209,11 +213,11 @@ class RenderEngine():
             # Test word placement in the grid
             # NOTE: Thought about passing this info as a word_info tuple, but that seemed to be redundant as I'd still
             #       need to collect all the info and assemble it into the tuple. This way you see clearly what is passed
-            valid = self.test_word_placement(word_item, start_x, end_x, start_y, end_y, step_x, step_y)
+            valid = self._test_word_placement(word_item, start_x, end_x, start_y, end_y, step_x, step_y)
             if not(valid):
                 # Try reversing the order of the word to see if it will fit that way
                 word_item = word_item[::-1]
-                valid = self.test_word_placement(word_item, start_x, end_x, start_y, end_y, step_x, step_y)
+                valid = self._test_word_placement(word_item, start_x, end_x, start_y, end_y, step_x, step_y)
 
                 if not valid:
                     orientation = self.orientations[random.randint(1, len(self.orientations))] # Try a new random orientation
@@ -221,7 +225,7 @@ class RenderEngine():
 
         # place word in grid
         if valid:
-            self.insert_word_on_grid(word_item, start_x, end_x, start_y, end_y, step_x, step_y)
+            self._insert_word_on_grid(word_item, start_x, end_x, start_y, end_y, step_x, step_y)
 
             # DEBUG
             # print(word_item + " : " + orientation + " start_x: " + str(start_x) + " end_x: " + str(
@@ -233,7 +237,7 @@ class RenderEngine():
         else:
            self.missed_words.append(word)
 
-    def test_word_placement(self, word_item, start_x, end_x, start_y, end_y, step_x, step_y):
+    def _test_word_placement(self, word_item, start_x, end_x, start_y, end_y, step_x, step_y):
         """
             Determines if a given word can be placed in the grid at the specified location
         :param self:
@@ -265,9 +269,9 @@ class RenderEngine():
             step_y = 1
 
         while (col != end_x) and (row != end_y):
-            if not (self.mutable_matrix[row][col]):
+            if not (self._mutable_matrix[row][col]):
                 # Determine if it is the same letter we are trying to place
-                if self.letter_matrix[row][col].lower() == word_item[letter_index].lower():
+                if self._letter_matrix[row][col].lower() == word_item[letter_index].lower():
                     # We're still okay - continue to try to place word
                     letter_index += 1
                     row += step_y
@@ -280,24 +284,24 @@ class RenderEngine():
             col += step_x
             letter_index += 1
 
-        if not (self.mutable_matrix[row][col]):
+        if not (self._mutable_matrix[row][col]):
             # Determine if it is the same letter we are trying to place
-            if not(self.letter_matrix[row][col] == word_item[letter_index]):
+            if not(self._letter_matrix[row][col] == word_item[letter_index]):
                 return False
 
         return True
 
-    def insert_word_on_grid(self, word_item, start_x, end_x, start_y, end_y, step_x, step_y):
+    def _insert_word_on_grid(self, word_item, start_x, end_x, start_y, end_y, step_x, step_y):
         letter_index = 0
         col = start_x
         row = start_y
 
         while (col != end_x) and (row != end_y):
-            self.letter_matrix[row][col] = word_item[letter_index]
-            self.mutable_matrix[row][col] = False
+            self._letter_matrix[row][col] = word_item[letter_index]
+            self._mutable_matrix[row][col] = False
             letter_index += 1
             col += step_x
             row += step_y
 
-        self.letter_matrix[row][col] = word_item[letter_index]
-        self.mutable_matrix[row][col] = False
+        self._letter_matrix[row][col] = word_item[letter_index]
+        self._mutable_matrix[row][col] = False
