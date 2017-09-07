@@ -22,7 +22,7 @@ def main(location):
     engine.generate_grid(16)
 
     engine.print_letter_matrix()
-    print("-" * word_object.max_word_length)
+    print("-" * word_object.get_max_word_len())
 
     #print (len(engine.missed_words))
     #engine.print_words_not_in_grid()
