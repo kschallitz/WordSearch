@@ -74,6 +74,7 @@ class RenderEngine():
         # If size is too small to contain largest word,
         # then, increase the grid size.
         max_word_len = self.word_object.get_max_word_len()
+
         if size < max_word_len:
             size = max_word_len
 
@@ -105,7 +106,13 @@ class RenderEngine():
             self.place_word_in_grid(word, orientation)
 
     def print_letter_matrix(self, matrix=None):
-        if (matrix == None):
+        """ Display the n X n matrix of letters and words
+         :param matrix: (optional) the matrix object to display. If none is given, the engine object's matrix will
+         be used.
+
+        """
+
+        if matrix is None:
             matrix = self.letter_matrix
 
         size = len(matrix)
@@ -114,7 +121,6 @@ class RenderEngine():
         # for i in range(size):
         #     print(str(i), end=' ')
         # print ('\r')
-
 
         for row in range(size):
             for col in range(size):
@@ -261,7 +267,7 @@ class RenderEngine():
         while (col != end_x) and (row != end_y):
             if not (self.mutable_matrix[row][col]):
                 # Determine if it is the same letter we are trying to place
-                if (self.letter_matrix[row][col].lower() == word_item[letter_index].lower()):
+                if self.letter_matrix[row][col].lower() == word_item[letter_index].lower():
                     # We're still okay - continue to try to place word
                     letter_index += 1
                     row += step_y
