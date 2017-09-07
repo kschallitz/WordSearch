@@ -37,9 +37,7 @@ class Words:
             f = open(file_name, "r")
 
             # File format is assumed to be strings (one per line)
-            for line in f:
-                line = self.clean_word(line)
-                self.wordlist.append(line)
+            self.wordlist = [self.clean_word(word) for word in f]
 
             f.close()
 
@@ -62,6 +60,8 @@ class Words:
     def read_words_url(self, url):
         """
         Read words into a list from an URL, making the words lowercase
+        NOTE: Calling this method does NOT remove existing words in the list. This is by design to allow
+        for the ability to load words from both a URL and a file.
 
         :param
             url: url containing UTF-8 encoded words (one per line)
@@ -78,7 +78,7 @@ class Words:
                     word = self.clean_word(word)
 
                     for subword in word.split():
-                        if len(subword) > 2:
+                        if len(subword) > 2: # Exclude any two letter words
                             self.wordlist.append(subword)
 
         except Exception:
@@ -117,11 +117,10 @@ class Words:
         :return:
             integer: Length of the largest word in the list
         """
+        if word_list is None or word_list == []:
+            if self.wordlist is not None and self.wordlist != []:
+                word_list = self.wordlist
+            else:
+                raise ValueError("wordlist must contain a valid list.")
 
-        self.max_word_length = 0
-
-        for word in word_list:
-            if len(word) > self.max_word_length:
-                self.max_word_length = len(word)
-
-        return self.max_word_length
+        return len(max(word_list, key=len))
