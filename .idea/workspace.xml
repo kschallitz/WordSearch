@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4c713579-5629-4781-9ffc-6f3a314d502b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/setup.py" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="24" column="45" lean-forward="false" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+              <folding>
+                <element signature="e#24#71#1" expanded="false" />
+                <element signature="e#72#95#0" expanded="true" />
+                <element signature="e#828#981#0" expanded="false" />
+                <element signature="e#860#981#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setup.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/setup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="words.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/words.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+              <folding>
+                <element signature="e#78#112#0" expanded="true" />
+                <element signature="e#310#595#0" expanded="false" />
+                <element signature="e#647#928#1" expanded="false" />
+                <element signature="e#3318#3526#1" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="engine.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/engine.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4233">
+              <caret line="279" column="21" lean-forward="false" selection-start-line="279" selection-start-column="21" selection-end-line="279" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>word_orientation</find>
+      <find>*</find>
+      <find>* 2</find>
+      <find>range(l</find>
+      <find>CONST_DIFFICULTY</find>
+      <find>_wordlist</find>
+      <find>_word_object</find>
+      <find>randomize_word_orientations</find>
+      <find>test_word_placement</find>
+      <find>word_engine.case</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/engine.py" />
+        <option value="$PROJECT_DIR$/words.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/setup.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="651" />
+    <option name="y" value="16" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="WordSearch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WordSearch" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../virtual3/WordSearch/Scripts/python3.exe" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="wordsearch" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4c713579-5629-4781-9ffc-6f3a314d502b" name="Default" comment="" />
+      <created>1504153770088</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1504153770088</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Initial push of code from IDE">
+      <created>1504158235815</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1504158235815</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fixed some for loops that were not Pythonic. Should not iterate over range of lists.">
+      <created>1504197482578</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1504197482578</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Did some cleanup:&#10; - removed dead code, refactored making hardcoded values into constants&#10; - changed loops to be fully Pyhtonic by using a dictionary instead of a&#10; list for word_orientation&#10; - added ability to generate grid in lower or upper case&#10; - added helper method to print words that were not placed in grid&#10; - imporved loop efficiency by calculating constants outside of loop&#10;   (yeah, that should be done by compiler, but it's nicer this way)&#10;- modified print_words_in_grid to use dictionary instead of list&#10;- modified place_word_in_grid to take word orientation as a parameter&#10;- updated quotes in place_word_in_grid to be consistantly ''&#10;- Added some comments to reflect design decisions throughout.">
+      <created>1504284632883</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1504284632883</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Did some cleanup:&#10; - removed dead code, refactored making hardcoded values into constants&#10; - changed loops to be fully Pyhtonic by using a dictionary instead of a&#10; list for word_orientation&#10; - added ability to generate grid in lower or upper case&#10; - added helper method to print words that were not placed in grid&#10; - imporved loop efficiency by calculating constants outside of loop&#10;   (yeah, that should be done by compiler, but it's nicer this way)&#10;- modified print_words_in_grid to use dictionary instead of list&#10;- modified place_word_in_grid to take word orientation as a parameter&#10;- updated quotes in place_word_in_grid to be consistantly ''">
+      <created>1504284674452</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1504284674452</updated>
+    </task>
+    <task id="LOCAL-00005" summary="- Added a call to new method: set_case().&#10;During development, I am calling with &quot;Capital&quot;. &#10;This makes it easier to locate the hidden words as they will all start &#10;with a capital letter.&#10;&#10;- removed call to print_word_orientation and replaced with a call to&#10;print_words_in_grid() at the end so the player can see what they need&#10;to find. print_word_orientations is a debug helper to show ALL words and&#10;their orientations; therefore, not all the words printed may be in the &#10;grid.">
+      <created>1504284886073</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1504284886073</updated>
+    </task>
+    <task id="LOCAL-00006" summary="- Created a new method: set_case()&#10;Sets the case to one of three values (lower, UPPER, Captial).&#10;default is &quot;lower&quot;&#10; &#10;- Created case dictionary for above three cases&#10;- Updated read_words_from_file and read_words_from_url to change case&#10;of word as set by user (or &quot;lower&quot; by default)&#10;&#10;- Added documentation to read_words_from_url">
+      <created>1504285037604</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1504285037604</updated>
+    </task>
+    <task id="LOCAL-00007" summary="I thought about implementing an algorithm to guarantee that all words &#10;are placed. There are problems doing this, but it would look something &#10;like this:&#10;&#10;1) Insert word at random location/orientation&#10;2) Attempt to insert next word at random location/&#10;3) If step #2 fails, repeat step #1&#10;4) Continue to place items &#10;&#10;The issue is that by placing randomly, there is no guarantee how long&#10;it will take to visit all possible locations. In addition, if a word is&#10;added which forces the algorithm to pop all the way back to the first &#10;word; this would be highly inefficient.&#10;&#10;The next idea was to force a complete search. So modify the above &#10;algorithm as follows:&#10;1) Insert word at random location/orientation&#10;2) Attempt to insert next word at random location/&#10;3) If step #2 fails:&#10;a) Move word from step 1:&#10;   record the initial x, y position and iterate over the entire grid&#10;   starting from that initial x,y. That way, each time we get popped off&#10;   we start at the next position in the grid. If we eventually reach&#10;   the start x,y - then the word that poppe us cannot be placed in the &#10;   grid.&#10;&#10;This could take a considerable amount of time and likely would mean that&#10;the grid would need to be duplicated to revert if necessary.&#10;&#10;In the end I tried several concepts - front loading the longer words,&#10;flipping the direction of the word if it doesn't fit on first try, etc.&#10;These concepts did help, although did very little for increasing the &#10;number of words inserted.&#10;&#10;Finally, I took a look at the % utilized in the grid and found that with&#10;my very large word set it was 100% utilized - meaning that EVERY letter&#10;in the grid was used. This led me to realize that the insert randomly&#10;method was actually the fastest and gained the same insertion rate of&#10;a full on iterative search within -10%. That's pretty darn good! So, &#10;in the end, I'm going with the original approach.">
+      <created>1504295984339</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1504295984339</updated>
+    </task>
+    <task id="LOCAL-00008" summary="- Cleaned up a bit per PEP8 standards (removing extra lines, &#10;  adding comments, removing extra parenthesis)">
+      <created>1504758624021</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1504758624021</updated>
+    </task>
+    <task id="LOCAL-00009" summary="- read_words_from_file: changed the reading of the line from a for/each&#10;iterator to a list comprehension.&#10;- Added comments to various methods&#10;- get_max_word_len: Fixed a bug - now correctly sets the word_list &#10;associated with the class as a default parameter. If the word list has&#10;not yet been read, it will raise an exception.&#10;- get_max_word_len: changed to use the built in python max function as&#10;it's more efficient.">
+      <created>1504758881806</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1504758881806</updated>
+    </task>
+    <task id="LOCAL-00010" summary="- renamed class variables and method names with _ as appropriate to &#10;indicate they are for internal use.&#10;&#10;- __init__ added check to verify that the passed Word object is valid,&#10;if not, raise an exception&#10;&#10;-">
+      <created>1504808388742</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1504808388742</updated>
+    </task>
+    <task id="LOCAL-00011" summary="- refactored to use Word methods and not utilise internal variables.">
+      <created>1504808478382</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1504808478382</updated>
+    </task>
+    <task id="LOCAL-00012" summary="- renamed class variables and method names with _ as appropriate to &#10;indicate they are for internal use.&#10;&#10;- read_words_from_file:&#10;Modified to use &quot;with&quot; block so it reads nicer.&#10;Modified to use a set comprehension instead of a list comprehension to&#10;save a few lines of code.">
+      <created>1504808604801</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1504808604801</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="651" y="16" width="1400" height="1000" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3505618" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.410148" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.410148" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial push of code from IDE" />
+    <MESSAGE value="Fixed some for loops that were not Pythonic. Should not iterate over range of lists." />
+    <MESSAGE value="Did some cleanup:&#10; - removed dead code, refactored making hardcoded values into constants&#10; - changed loops to be fully Pyhtonic by using a dictionary instead of a&#10; list for word_orientation&#10; - added ability to generate grid in lower or upper case&#10; - added helper method to print words that were not placed in grid&#10; - imporved loop efficiency by calculating constants outside of loop&#10;   (yeah, that should be done by compiler, but it's nicer this way)&#10;- modified print_words_in_grid to use dictionary instead of list&#10;- modified place_word_in_grid to take word orientation as a parameter&#10;- updated quotes in place_word_in_grid to be consistantly ''&#10;- Added some comments to reflect design decisions throughout." />
+    <MESSAGE value="Did some cleanup:&#10; - removed dead code, refactored making hardcoded values into constants&#10; - changed loops to be fully Pyhtonic by using a dictionary instead of a&#10; list for word_orientation&#10; - added ability to generate grid in lower or upper case&#10; - added helper method to print words that were not placed in grid&#10; - imporved loop efficiency by calculating constants outside of loop&#10;   (yeah, that should be done by compiler, but it's nicer this way)&#10;- modified print_words_in_grid to use dictionary instead of list&#10;- modified place_word_in_grid to take word orientation as a parameter&#10;- updated quotes in place_word_in_grid to be consistantly ''" />
+    <MESSAGE value="- Added a call to new method: set_case().&#10;During development, I am calling with &quot;Capital&quot;. &#10;This makes it easier to locate the hidden words as they will all start &#10;with a capital letter.&#10;&#10;- removed call to print_word_orientation and replaced with a call to&#10;print_words_in_grid() at the end so the player can see what they need&#10;to find. print_word_orientations is a debug helper to show ALL words and&#10;their orientations; therefore, not all the words printed may be in the &#10;grid." />
+    <MESSAGE value="- Created a new method: set_case()&#10;Sets the case to one of three values (lower, UPPER, Captial).&#10;default is &quot;lower&quot;&#10; &#10;- Created case dictionary for above three cases&#10;- Updated read_words_from_file and read_words_from_url to change case&#10;of word as set by user (or &quot;lower&quot; by default)&#10;&#10;- Added documentation to read_words_from_url" />
+    <MESSAGE value="I thought about implementing an algorithm to guarantee that all words &#10;are placed. There are problems doing this, but it would look something &#10;like this:&#10;&#10;1) Insert word at random location/orientation&#10;2) Attempt to insert next word at random location/&#10;3) If step #2 fails, repeat step #1&#10;4) Continue to place items &#10;&#10;The issue is that by placing randomly, there is no guarantee how long&#10;it will take to visit all possible locations. In addition, if a word is&#10;added which forces the algorithm to pop all the way back to the first &#10;word; this would be highly inefficient.&#10;&#10;The next idea was to force a complete search. So modify the above &#10;algorithm as follows:&#10;1) Insert word at random location/orientation&#10;2) Attempt to insert next word at random location/&#10;3) If step #2 fails:&#10;a) Move word from step 1:&#10;   record the initial x, y position and iterate over the entire grid&#10;   starting from that initial x,y. That way, each time we get popped off&#10;   we start at the next position in the grid. If we eventually reach&#10;   the start x,y - then the word that poppe us cannot be placed in the &#10;   grid.&#10;&#10;This could take a considerable amount of time and likely would mean that&#10;the grid would need to be duplicated to revert if necessary.&#10;&#10;In the end I tried several concepts - front loading the longer words,&#10;flipping the direction of the word if it doesn't fit on first try, etc.&#10;These concepts did help, although did very little for increasing the &#10;number of words inserted.&#10;&#10;Finally, I took a look at the % utilized in the grid and found that with&#10;my very large word set it was 100% utilized - meaning that EVERY letter&#10;in the grid was used. This led me to realize that the insert randomly&#10;method was actually the fastest and gained the same insertion rate of&#10;a full on iterative search within -10%. That's pretty darn good! So, &#10;in the end, I'm going with the original approach." />
+    <MESSAGE value="- Cleaned up a bit per PEP8 standards (removing extra lines, &#10;  adding comments, removing extra parenthesis)" />
+    <MESSAGE value="- read_words_from_file: changed the reading of the line from a for/each&#10;iterator to a list comprehension.&#10;- Added comments to various methods&#10;- get_max_word_len: Fixed a bug - now correctly sets the word_list &#10;associated with the class as a default parameter. If the word list has&#10;not yet been read, it will raise an exception.&#10;- get_max_word_len: changed to use the built in python max function as&#10;it's more efficient." />
+    <MESSAGE value="- renamed class variables and method names with _ as appropriate to &#10;indicate they are for internal use.&#10;&#10;- __init__ added check to verify that the passed Word object is valid,&#10;if not, raise an exception&#10;&#10;-" />
+    <MESSAGE value="- refactored to use Word methods and not utilise internal variables." />
+    <MESSAGE value="- renamed class variables and method names with _ as appropriate to &#10;indicate they are for internal use.&#10;&#10;- read_words_from_file:&#10;Modified to use &quot;with&quot; block so it reads nicer.&#10;Modified to use a set comprehension instead of a list comprehension to&#10;save a few lines of code." />
+    <option name="LAST_COMMIT_MESSAGE" value="- renamed class variables and method names with _ as appropriate to &#10;indicate they are for internal use.&#10;&#10;- read_words_from_file:&#10;Modified to use &quot;with&quot; block so it reads nicer.&#10;Modified to use a set comprehension instead of a list comprehension to&#10;save a few lines of code." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="42" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#71#1" expanded="false" />
+            <element signature="e#72#95#0" expanded="true" />
+            <element signature="e#828#981#0" expanded="false" />
+            <element signature="e#860#981#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/words.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="92" column="48" lean-forward="false" selection-start-line="92" selection-start-column="48" selection-end-line="92" selection-end-column="48" />
+          <folding>
+            <element signature="e#78#112#0" expanded="true" />
+            <element signature="e#310#595#0" expanded="false" />
+            <element signature="e#647#928#1" expanded="false" />
+            <element signature="e#3318#3526#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+          <folding>
+            <element signature="e#24#71#1" expanded="false" />
+            <element signature="e#72#95#0" expanded="true" />
+            <element signature="e#828#981#0" expanded="false" />
+            <element signature="e#860#981#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/words.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="92" column="48" lean-forward="false" selection-start-line="92" selection-start-column="48" selection-end-line="92" selection-end-column="48" />
+          <folding>
+            <element signature="e#78#112#0" expanded="true" />
+            <element signature="e#310#595#0" expanded="false" />
+            <element signature="e#647#928#1" expanded="false" />
+            <element signature="e#3318#3526#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1598">
+          <caret line="94" column="106" lean-forward="true" selection-start-line="94" selection-start-column="106" selection-end-line="94" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+          <folding>
+            <element signature="e#24#71#1" expanded="false" />
+            <element signature="e#72#95#0" expanded="true" />
+            <element signature="e#828#981#0" expanded="false" />
+            <element signature="e#860#981#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/words.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="92" column="48" lean-forward="false" selection-start-line="92" selection-start-column="48" selection-end-line="92" selection-end-column="48" />
+          <folding>
+            <element signature="e#78#112#0" expanded="true" />
+            <element signature="e#310#595#0" expanded="false" />
+            <element signature="e#647#928#1" expanded="false" />
+            <element signature="e#3318#3526#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="89" column="93" lean-forward="false" selection-start-line="89" selection-start-column="93" selection-end-line="89" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="197" column="0" lean-forward="false" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4233">
+          <caret line="279" column="21" lean-forward="false" selection-start-line="279" selection-start-column="21" selection-end-line="279" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="45" lean-forward="false" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+          <folding>
+            <element signature="e#24#71#1" expanded="false" />
+            <element signature="e#72#95#0" expanded="true" />
+            <element signature="e#828#981#0" expanded="false" />
+            <element signature="e#860#981#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/words.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <element signature="e#78#112#0" expanded="true" />
+            <element signature="e#310#595#0" expanded="false" />
+            <element signature="e#647#928#1" expanded="false" />
+            <element signature="e#3318#3526#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
